@@ -1,0 +1,9 @@
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE DATABASE `line_todo_app_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE DATABASE `line_todo_app_test` DEFAULT CHARACTER SET `utf8`[0m
+Started GET "/" for ::1 at 2023-07-10 22:34:02 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 29.4ms | Allocations: 575)
+Completed 200 OK in 104ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 4372)
+
+
