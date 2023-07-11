@@ -7,3 +7,530 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 104ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 4372)
 
 
+Started GET "/" for ::1 at 2023-07-10 22:43:04 +0900
+  [1m[35m (75.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (56.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230710134151_create_tasks.rb
+
+
+):
+  
+activerecord (6.1.7.4) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7.4) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7.4) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7.4) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.4) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.4) lib/rails/engine.rb:539:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT GET_LOCK('2968136048480948730', 0)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateTasks (20230710134151)
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230710134151')[0m
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-07-10 13:44:39.960635', '2023-07-10 13:44:39.960635')[0m
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('2968136048480948730')[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2023-07-10 22:44:56 +0900
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.0ms | Allocations: 469)
+Completed 200 OK in 39ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3224)
+
+
+Started GET "/" for ::1 at 2023-07-10 22:45:54 +0900
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.7ms | Allocations: 575)
+Completed 200 OK in 69ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 4383)
+
+
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '0のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.7ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('0のタスク', '2023-07-10 13:52:29.707099', '2023-07-10 13:52:29.707099')[0m
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '1のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.7ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('1のタスク', '2023-07-10 13:52:29.733747', '2023-07-10 13:52:29.733747')[0m
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '2のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.9ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('2のタスク', '2023-07-10 13:52:29.758922', '2023-07-10 13:52:29.758922')[0m
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '3のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (3.2ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('3のタスク', '2023-07-10 13:52:29.782361', '2023-07-10 13:52:29.782361')[0m
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (4.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '4のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.3ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('4のタスク', '2023-07-10 13:52:29.813516', '2023-07-10 13:52:29.813516')[0m
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '5のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.1ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('5のタスク', '2023-07-10 13:52:29.840336', '2023-07-10 13:52:29.840336')[0m
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (3.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '6のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.3ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('6のタスク', '2023-07-10 13:52:29.867626', '2023-07-10 13:52:29.867626')[0m
+  [1m[36mTRANSACTION (9.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (4.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '7のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.4ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('7のタスク', '2023-07-10 13:52:29.916441', '2023-07-10 13:52:29.916441')[0m
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '8のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.2ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('8のタスク', '2023-07-10 13:52:29.944941', '2023-07-10 13:52:29.944941')[0m
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '9のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (1.7ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('9のタスク', '2023-07-10 13:52:29.965629', '2023-07-10 13:52:29.965629')[0m
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (69.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `line_todo_app_development`[0m
+  [1m[35m (14.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `line_todo_app_test`[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE DATABASE `line_todo_app_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE DATABASE `line_todo_app_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (10.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `tasks` CASCADE[0m
+  [1m[35m (35.9ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) DEFAULT CHARSET=utf8mb3[0m
+  [1m[35m (24.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (6.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20230710134151)[0m
+  [1m[35m (36.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-07-10 13:53:29.414187', '2023-07-10 13:53:29.414187')[0m
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', 'cc6ab4e033324ddb007a777116792a0846d63b92', '2023-07-10 13:53:29.447080', '2023-07-10 13:53:29.447080')[0m
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `tasks` CASCADE[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) DEFAULT CHARSET=utf8mb3[0m
+  [1m[35m (39.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (7.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20230710134151)[0m
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-07-10 13:53:29.668599', '2023-07-10 13:53:29.668599')[0m
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (10.8ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `ar_internal_metadata`.`value` = 'test', `ar_internal_metadata`.`updated_at` = '2023-07-10 13:53:29.695282' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', 'cc6ab4e033324ddb007a777116792a0846d63b92', '2023-07-10 13:53:29.731672', '2023-07-10 13:53:29.731672')[0m
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '1のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.3ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('1のタスク', '2023-07-10 13:53:29.906115', '2023-07-10 13:53:29.906115')[0m
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.8ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '2のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (10.0ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('2のタスク', '2023-07-10 13:53:29.929804', '2023-07-10 13:53:29.929804')[0m
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (3.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '3のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (4.0ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('3のタスク', '2023-07-10 13:53:29.964016', '2023-07-10 13:53:29.964016')[0m
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (4.4ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '4のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (4.2ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('4のタスク', '2023-07-10 13:53:29.997668', '2023-07-10 13:53:29.997668')[0m
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (3.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '5のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (3.2ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('5のタスク', '2023-07-10 13:53:30.028387', '2023-07-10 13:53:30.028387')[0m
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (3.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '6のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (3.7ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('6のタスク', '2023-07-10 13:53:30.057012', '2023-07-10 13:53:30.057012')[0m
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (4.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '7のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (4.6ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('7のタスク', '2023-07-10 13:53:30.089089', '2023-07-10 13:53:30.089089')[0m
+  [1m[36mTRANSACTION (34.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '8のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (3.2ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('8のタスク', '2023-07-10 13:53:30.143852', '2023-07-10 13:53:30.143852')[0m
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '9のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.0ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('9のタスク', '2023-07-10 13:53:30.168256', '2023-07-10 13:53:30.168256')[0m
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTask Load (2.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '10のタスク' LIMIT 1[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTask Create (2.4ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('10のタスク', '2023-07-10 13:53:30.189392', '2023-07-10 13:53:30.189392')[0m
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTask Load (2.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '1のタスク' LIMIT 1[0m
+  [1m[36mTask Load (3.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '2のタスク' LIMIT 1[0m
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '3のタスク' LIMIT 1[0m
+  [1m[36mTask Load (4.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '4のタスク' LIMIT 1[0m
+  [1m[36mTask Load (2.8ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '5のタスク' LIMIT 1[0m
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '6のタスク' LIMIT 1[0m
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '7のタスク' LIMIT 1[0m
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '8のタスク' LIMIT 1[0m
+  [1m[36mTask Load (3.4ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '9のタスク' LIMIT 1[0m
+  [1m[36mTask Load (3.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`content` = '10のタスク' LIMIT 1[0m
+Started GET "/" for ::1 at 2023-07-10 22:54:30 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/3.1.0/gems/railties-6.1.7.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 78.5ms | Allocations: 268)
+Completed 200 OK in 437ms (Views: 112.2ms | Allocations: 1188)
+
+
+Started GET "/tasks" for ::1 at 2023-07-10 22:54:36 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (7.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 208.5ms | Allocations: 9670)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.16.1
+
+  Rendered layout layouts/application.html.erb (Duration: 7164.1ms | Allocations: 28520)
+Completed 500 Internal Server Error in 7175ms (ActiveRecord: 47.8ms | Allocations: 30538)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-10 22:56:02 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (5.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 41.6ms | Allocations: 7097)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.16.1
+
+  Rendered layout layouts/application.html.erb (Duration: 4927.9ms | Allocations: 12106)
+Completed 500 Internal Server Error in 4934ms (ActiveRecord: 29.3ms | Allocations: 13372)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-10 23:10:56 +0900
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (5.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 7752)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.16.1
+
+  Rendered layout layouts/application.html.erb (Duration: 5195.4ms | Allocations: 15988)
+Completed 500 Internal Server Error in 5231ms (ActiveRecord: 16.2ms | Allocations: 19691)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-10 23:57:11 +0900
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (7.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 37.1ms | Allocations: 7752)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.16.1
+
+  Rendered layout layouts/application.html.erb (Duration: 5830.5ms | Allocations: 15996)
+Completed 500 Internal Server Error in 5869ms (ActiveRecord: 21.0ms | Allocations: 19699)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10

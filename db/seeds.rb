@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+num_tasks = 10
+
+num_tasks.times do |i|
+  Task.find_or_create_by(content: "#{i+1}のタスク")
+end
