@@ -534,3 +534,249 @@ Your manifest contains:
     13:   <body>
   
 app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-12 22:12:01 +0900
+  [1m[35m (17.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (24.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 115.1ms | Allocations: 7752)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/process/promises:227
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at __node_internal_ (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:233:9)
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>)
+    at loadFileChain (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:192:24)
+    at loadFileChain.next (<anonymous>)
+    at buildRootChain (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:78:27)
+    at buildRootChain.next (<anonymous>)
+    at loadPrivatePartialConfig (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/partial.js:79:62)
+    at loadPrivatePartialConfig.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/partial.js:122:25
+    at Generator.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:269:25)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:93:9
+    at new Promise (<anonymous>)
+    at async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:92:14)
+    at Object.<anonymous> (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:126:26)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:3:103)
+    at _next (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:4:194)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:4:364
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:4:97)
+    at Object._loader (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:210:18)
+    at Object.loader (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:48:18)
+    at Object.<anonymous> (/Users/yasu_ohki/git/line_todo_app/node_modules/babel-loader/lib/index.js:44:12)
+    at LOADER_EXECUTION (/Users/yasu_ohki/git/line_todo_app/node_modules/loader-runner/lib/LoaderRunner.js:119:14)
+    at runSyncOrAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/loader-runner/lib/LoaderRunner.js:120:4)
+    at iterateNormalLoaders (/Users/yasu_ohki/git/line_todo_app/node_modules/loader-runner/lib/LoaderRunner.js:232:2)
+    at Array.<anonymous> (/Users/yasu_ohki/git/line_todo_app/node_modules/loader-runner/lib/LoaderRunner.js:205:4)
+    at Storage.finished (/Users/yasu_ohki/git/line_todo_app/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:55:16)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:91:9
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+  Rendered layout layouts/application.html.erb (Duration: 5180.0ms | Allocations: 16016)
+Completed 500 Internal Server Error in 5230ms (ActiveRecord: 88.3ms | Allocations: 19719)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-12 22:17:33 +0900
+  [1m[35m (27.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (7.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 92.3ms | Allocations: 7752)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+nodenv: yarn: command not found
+
+The `yarn' command exists in these Node versions:
+  15.4.0
+  15.7.0
+
+nodenv: yarn: command not found
+
+The `yarn' command exists in these Node versions:
+  15.4.0
+  15.7.0
+
+
+  Rendered layout layouts/application.html.erb (Duration: 1759.2ms | Allocations: 16005)
+Completed 500 Internal Server Error in 1832ms (ActiveRecord: 46.6ms | Allocations: 19708)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /Users/yasu_ohki/git/line_todo_app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-12 22:29:35 +0900
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (22.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 89.6ms | Allocations: 7752)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ed44132a8da7cfb7c653
+Version: webpack 4.46.0
+Time: 1411ms
+Built at: 2023/07/12 22:29:42
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e37c5e23264f2a09b745.js   6.86 KiB  application  [emitted] [immutable]  application
+js/application-e37c5e23264f2a09b745.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e37c5e23264f2a09b745.js js/application-e37c5e23264f2a09b745.js.map
+[./app/javascript/packs/application.js] 2.97 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>)
+
+
+(node:51725) UnhandledPromiseRejectionWarning: Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/yasu_ohki/git/line_todo_app/babel-virtual-resolve-base.js
+    at new NodeError (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)
+    at packageResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)
+    at moduleResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)
+    at defaultResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)
+    at resolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)
+    at tryImportMetaResolve (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:137:45)
+    at resolveStandardizedNameForImport (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:159:19)
+    at resolveStandardizedName (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:168:12)
+    at loadPlugin (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/files/plugins.js:47:20)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:139:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:291:5)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/yasu_ohki/git/line_todo_app/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-descriptors.js:98:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/gensync-utils/functional.js:21:23
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:347:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/yasu_ohki/git/line_todo_app/node_modules/@babel/core/lib/config/config-chain.js:314:14)
+    at chainWalker.next (<anonymous>)
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51725) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:51725) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+  Rendered layout layouts/application.html.erb (Duration: 6411.0ms | Allocations: 15137)
+Completed 200 OK in 6455ms (Views: 6361.9ms | ActiveRecord: 59.7ms | Allocations: 18885)
+
+
