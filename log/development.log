@@ -3225,3 +3225,402 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 126ms (Views: 75.7ms | ActiveRecord: 18.4ms | Allocations: 17217)
 
 
+Started GET "/" for ::1 at 2023-07-18 13:59:40 +0900
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (8.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 42.6ms | Allocations: 7749)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 12926)
+Completed 200 OK in 122ms (Views: 67.4ms | ActiveRecord: 21.7ms | Allocations: 16803)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 16:18:59 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2023-07-18 16:31:08 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (8.6ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 190.1ms | Allocations: 8886)
+  Rendered layout layouts/application.html.erb (Duration: 231.0ms | Allocations: 14041)
+Completed 200 OK in 252ms (Views: 235.7ms | ActiveRecord: 80.7ms | Allocations: 17192)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 16:31:14 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 16:31:37 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.150.196 at 2023-07-18 16:36:52 +0900
+Cannot render console from 147.92.150.196! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.150.194 at 2023-07-18 16:37:09 +0900
+Cannot render console from 147.92.150.194! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/callback?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 16:48:56 +0900
+Processing by LineBotController#callback as */*
+  Parameters: {"content"=>"新しいタスク"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 181575ms (Allocations: 699728)
+
+
+Started POST "/callback?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 16:56:54 +0900
+Processing by LineBotController#callback as */*
+  Parameters: {"content"=>"新しいタスク"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 20717ms (Allocations: 34321)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 17:09:20 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.150.193 at 2023-07-18 17:11:27 +0900
+Cannot render console from 147.92.150.193! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 17:20:33 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+Started POST "/callback?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 17:28:03 +0900
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as */*
+  Parameters: {"content"=>"新しいタスク"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 21984ms (ActiveRecord: 0.0ms | Allocations: 40216)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: b1f8-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 677a-49-251-232-205.ngrok.io
+Started POST "/" for 147.92.149.167 at 2023-07-18 17:57:46 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 17:59:17 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 17:59:56 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 18:00:30 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 18:00:56 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2023-07-18 21:50:48 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (4.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 123.3ms | Allocations: 8886)
+  Rendered layout layouts/application.html.erb (Duration: 168.9ms | Allocations: 14038)
+Completed 200 OK in 188ms (Views: 172.7ms | ActiveRecord: 21.5ms | Allocations: 17190)
+
+
+Started GET "/tasks/10/edit" for ::1 at 2023-07-18 21:51:14 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mTask Load (13.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:62:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 24.0ms | Allocations: 2365)
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 26.7ms | Allocations: 2836)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 4813)
+Completed 200 OK in 68ms (Views: 34.6ms | ActiveRecord: 13.2ms | Allocations: 7984)
+
+
+Started GET "/tasks" for ::1 at 2023-07-18 21:51:16 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (11.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 31.9ms | Allocations: 2969)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 4847)
+Completed 200 OK in 41ms (Views: 26.2ms | ActiveRecord: 11.7ms | Allocations: 5717)
+
+
+Started GET "/" for ::1 at 2023-07-18 21:51:52 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (7.0ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 59.0ms | Allocations: 7090)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 9162)
+Completed 200 OK in 74ms (Views: 29.3ms | ActiveRecord: 39.7ms | Allocations: 10521)
+
+
+Started POST "/" for 147.92.149.165 at 2023-07-18 21:53:30 +0900
+Cannot render console from 147.92.149.165! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/callback?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 21:54:03 +0900
+Processing by LineBotController#callback as */*
+  Parameters: {"content"=>"新しいタスク"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 3583ms (ActiveRecord: 0.0ms | Allocations: 13642)
+
+
+Started POST "/callback" for ::1 at 2023-07-18 21:54:55 +0900
+Processing by LineBotController#callback as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 65204ms (ActiveRecord: 0.0ms | Allocations: 493152)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 21:56:19 +0900
+Cannot render console from 147.92.149.167! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for 147.92.149.167 at 2023-07-18 21:57:57 +0900
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/callback" for ::1 at 2023-07-18 22:31:54 +0900
+Processing by LineBotController#callback as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 10179ms (Allocations: 28647)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 22:33:51 +0900
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: localhost
+Started GET "/" for ::1 at 2023-07-18 22:35:32 +0900
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (4.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 7749)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 12926)
+Completed 200 OK in 93ms (Views: 51.2ms | ActiveRecord: 15.3ms | Allocations: 16803)
+
+
+Started POST "/" for ::1 at 2023-07-18 22:35:52 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/callback" for ::1 at 2023-07-18 22:46:59 +0900
+Processing by LineBotController#callback as */*
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 7548ms (Allocations: 24535)
+
+
+Started POST "/" for ::1 at 2023-07-18 22:47:15 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/tasks" for ::1 at 2023-07-18 22:47:37 +0900
+Processing by TasksController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (4.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 118.9ms | Allocations: 3643)
+  Rendered layout layouts/application.html.erb (Duration: 135.3ms | Allocations: 5651)
+Completed 200 OK in 138ms (Views: 136.7ms | ActiveRecord: 14.9ms | Allocations: 6238)
+
+
+Started POST "/?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 22:48:50 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/tasks?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3%82%AF" for ::1 at 2023-07-18 22:49:16 +0900
+Processing by TasksController#create as */*
+  Parameters: {"content"=>"新しいタスク"}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: task
+Did you mean?  controller
+               action
+               content):
+  
+app/controllers/tasks_controller.rb:68:in `task_params'
+app/controllers/tasks_controller.rb:24:in `create'
+Started GET "/" for ::1 at 2023-07-18 22:49:52 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (3.8ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4593)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 3.8ms | Allocations: 5002)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:02:54 +0900
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490092765904946", "text"=>"a"}, "webhookEventId"=>"01H5MMZ8ST8MBD476B9QDAKAT2", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689688973827, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490092765904946", "text"=>"a"}, "webhookEventId"=>"01H5MMZ8ST8MBD476B9QDAKAT2", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689688973827, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 458700ms (ActiveRecord: 0.0ms | Allocations: 1309234)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:10:49 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490890036510993", "text"=>"test"}, "webhookEventId"=>"01H5MNDS1N6573H2PQSBKAJY1E", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689449035, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490890036510993", "text"=>"test"}, "webhookEventId"=>"01H5MNDS1N6573H2PQSBKAJY1E", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689449035, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:11:33 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490963251757239", "text"=>"tttt"}, "webhookEventId"=>"01H5MNF3S1HCF37750QQGAHV8J", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689492788, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490963251757239", "text"=>"tttt"}, "webhookEventId"=>"01H5MNF3S1HCF37750QQGAHV8J", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689492788, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:11:53 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490997880455185", "text"=>"tt"}, "webhookEventId"=>"01H5MNFQKJ1C1JT4N3Q29PDQ0T", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689513305, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464490997880455185", "text"=>"tt"}, "webhookEventId"=>"01H5MNFQKJ1C1JT4N3Q29PDQ0T", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689513305, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:12:18 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464491039689277666", "text"=>"a"}, "webhookEventId"=>"01H5MNGFTWPBR1BYPV54NHZ629", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689538228, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464491039689277666", "text"=>"a"}, "webhookEventId"=>"01H5MNGFTWPBR1BYPV54NHZ629", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689689538228, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 358)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:20:39 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464491880060027281", "text"=>"a"}, "webhookEventId"=>"01H5MNZSAQDHCFQYANVGZ6T88M", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689690039133, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464491880060027281", "text"=>"a"}, "webhookEventId"=>"01H5MNZSAQDHCFQYANVGZ6T88M", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689690039133, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 226030ms (Allocations: 400228)
+
+
+Started GET "/" for ::1 at 2023-07-18 23:24:31 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (9.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 248.9ms | Allocations: 9796)
+  Rendered layout layouts/application.html.erb (Duration: 283.9ms | Allocations: 14954)
+Completed 200 OK in 371ms (Views: 354.5ms | ActiveRecord: 45.2ms | Allocations: 17812)
+
+
+Started GET "/tasks/7" for ::1 at 2023-07-18 23:24:34 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (7.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:62:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2317)
+Completed 200 OK in 28ms (Views: 8.3ms | ActiveRecord: 7.1ms | Allocations: 4888)
+
+
+Started GET "/tasks" for ::1 at 2023-07-18 23:24:35 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (4.5ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 2888)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 4764)
+Completed 200 OK in 33ms (Views: 21.3ms | ActiveRecord: 4.5ms | Allocations: 5625)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:24:41 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464492285615669298", "text"=>"new"}, "webhookEventId"=>"01H5MP75FR0QBFVGER3ZCHTXPF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689690280981, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464492285615669298", "text"=>"new"}, "webhookEventId"=>"01H5MP75FR0QBFVGER3ZCHTXPF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689690280981, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:38:56 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464493720738464059", "text"=>"あ"}, "webhookEventId"=>"01H5MQ18J7K47GX1P95B26BPFV", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689691136285, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464493720738464059", "text"=>"あ"}, "webhookEventId"=>"01H5MQ18J7K47GX1P95B26BPFV", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689691136285, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 626017ms (Allocations: 3390384)
+
+
+Completed 400 Bad Request in 1487340ms (Allocations: 5525744)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-18 23:50:56 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464494928329179201", "text"=>"test"}, "webhookEventId"=>"01H5MQQ7N0M08S0FNJTWPBX1JV", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689691856037, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464494928329179201", "text"=>"test"}, "webhookEventId"=>"01H5MQQ7N0M08S0FNJTWPBX1JV", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689691856037, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 102241ms (Allocations: 167146)
+
+
+  
+ArgumentError (`channel_token` is not configured):
+  
+app/controllers/line_bot_controller.rb:31:in `block in callback'
+app/controllers/line_bot_controller.rb:18:in `each'
+app/controllers/line_bot_controller.rb:18:in `callback'
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: e554-49-251-232-205.ngrok.io
+Started POST "/" for 147.92.149.167 at 2023-07-19 00:04:19 +0900
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464496275237634129", "text"=>"aaa"}, "webhookEventId"=>"01H5MRFQ75KJMMP0PVN7HRJCWF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689692658856, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464496275237634129", "text"=>"aaa"}, "webhookEventId"=>"01H5MRFQ75KJMMP0PVN7HRJCWF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689692658856, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
