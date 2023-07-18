@@ -3213,3 +3213,15 @@ Started POST "/callback?content=%E6%96%B0%E3%81%97%E3%81%84%E3%82%BF%E3%82%B9%E3
 Processing by LineBotController#callback as */*
   Parameters: {"content"=>"新しいタスク"}
 Can't verify CSRF token authenticity.
+Started GET "/" for ::1 at 2023-07-18 13:10:22 +0900
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (5.3ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 7749)
+  Rendered layout layouts/application.html.erb (Duration: 87.8ms | Allocations: 13341)
+Completed 200 OK in 126ms (Views: 75.7ms | ActiveRecord: 18.4ms | Allocations: 17217)
+
+
