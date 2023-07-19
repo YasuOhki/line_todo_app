@@ -3859,3 +3859,118 @@ Can't verify CSRF token authenticity.
 Completed 200 OK in 227ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2999)
 
 
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 14:24:39 +0900
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464582878236770369", "text"=>"Task.11"}, "webhookEventId"=>"01H5P9Q17QWX7KE28RWWZZ3687", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744278267, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464582878236770369", "text"=>"Task.11"}, "webhookEventId"=>"01H5P9Q17QWX7KE28RWWZZ3687", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744278267, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+  [1m[36mTask Create (137.1ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('Task.11', '2023-07-19 05:24:46.941043', '2023-07-19 05:24:46.941043')[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+  [1m[36mTRANSACTION (58.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+Completed 406 Not Acceptable in 7616ms (ActiveRecord: 241.1ms | Allocations: 33399)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/line_bot_controller.rb:25:in `block in callback'
+app/controllers/line_bot_controller.rb:16:in `each'
+app/controllers/line_bot_controller.rb:16:in `callback'
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 14:25:19 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464582945412218980", "text"=>"Task.test"}, "webhookEventId"=>"01H5P9R8BXKWM5BX89AYNRCKYP", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744318392, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464582945412218980", "text"=>"Task.test"}, "webhookEventId"=>"01H5P9R8BXKWM5BX89AYNRCKYP", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744318392, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+  [1m[36mTask Create (7.4ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('Task.test', '2023-07-19 05:25:19.490638', '2023-07-19 05:25:19.490638')[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+  [1m[36mTRANSACTION (24.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block (2 levels) in callback'
+Completed 406 Not Acceptable in 114ms (ActiveRecord: 68.0ms | Allocations: 8445)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/line_bot_controller.rb:25:in `block in callback'
+app/controllers/line_bot_controller.rb:16:in `each'
+app/controllers/line_bot_controller.rb:16:in `callback'
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 14:32:44 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464583693660061922", "text"=>"Task.test2"}, "webhookEventId"=>"01H5PA5VP27FZJVPTEQ8VKA2WG", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744764461, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464583693660061922", "text"=>"Task.test2"}, "webhookEventId"=>"01H5PA5VP27FZJVPTEQ8VKA2WG", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689744764461, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block in callback'
+  [1m[36mTask Create (7.8ms)[0m  [1m[32mINSERT INTO `tasks` (`content`, `created_at`, `updated_at`) VALUES ('Task.test2', '2023-07-19 05:32:45.353673', '2023-07-19 05:32:45.353673')[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block in callback'
+  [1m[36mTRANSACTION (18.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/line_bot_controller.rb:26:in `block in callback'
+Completed 200 OK in 413ms (Views: 4.0ms | ActiveRecord: 37.8ms | Allocations: 9131)
+
+
+Started GET "/" for ::1 at 2023-07-19 14:36:04 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (7.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 58.4ms | Allocations: 3914)
+  Rendered layout layouts/application.html.erb (Duration: 142.7ms | Allocations: 9043)
+Completed 200 OK in 157ms (Views: 142.0ms | ActiveRecord: 7.9ms | Allocations: 10698)
+
+
+Started DELETE "/tasks/11" for ::1 at 2023-07-19 14:37:48 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"11"}
+  [1m[36mTask Load (2.9ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 11 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:62:in `set_task'
+  [1m[36mTRANSACTION (31.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+  [1m[36mTask Destroy (18.1ms)[0m  [1m[31mDELETE FROM `tasks` WHERE `tasks`.`id` = 11[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (31.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 268ms (ActiveRecord: 123.4ms | Allocations: 9707)
+
+
+Started GET "/tasks" for ::1 at 2023-07-19 14:37:49 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (10.4ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 33.3ms | Allocations: 3334)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 5406)
+Completed 200 OK in 69ms (Views: 53.9ms | ActiveRecord: 10.4ms | Allocations: 6135)
+
+
+Started DELETE "/tasks/12" for ::1 at 2023-07-19 14:37:52 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"12"}
+  [1m[36mTask Load (5.1ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:62:in `set_task'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+  [1m[36mTask Destroy (13.2ms)[0m  [1m[31mDELETE FROM `tasks` WHERE `tasks`.`id` = 12[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (24.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 79ms (ActiveRecord: 53.3ms | Allocations: 4583)
+
+
+Started GET "/tasks" for ::1 at 2023-07-19 14:37:52 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (25.2ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 88.0ms | Allocations: 2882)
+  Rendered layout layouts/application.html.erb (Duration: 96.8ms | Allocations: 4725)
+Completed 200 OK in 104ms (Views: 74.5ms | ActiveRecord: 25.2ms | Allocations: 5143)
+
+
