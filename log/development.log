@@ -3624,3 +3624,238 @@ Started POST "/" for 147.92.149.167 at 2023-07-19 00:04:19 +0900
 Processing by LineBotController#callback as HTML
   Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464496275237634129", "text"=>"aaa"}, "webhookEventId"=>"01H5MRFQ75KJMMP0PVN7HRJCWF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689692658856, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464496275237634129", "text"=>"aaa"}, "webhookEventId"=>"01H5MRFQ75KJMMP0PVN7HRJCWF", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689692658856, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
 Can't verify CSRF token authenticity.
+Started POST "/" for 147.92.149.167 at 2023-07-19 09:01:07 +0900
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464550313006202961", "text"=>"test"}, "webhookEventId"=>"01H5NQ6NS181JB63VVTXFBV0NP", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689724867877, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464550313006202961", "text"=>"test"}, "webhookEventId"=>"01H5NQ6NS181JB63VVTXFBV0NP", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689724867877, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 2902413ms (ActiveRecord: 0.0ms | Allocations: 5731920)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 09:49:49 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464555217439424786", "text"=>"test"}, "webhookEventId"=>"01H5NSZWBGKW3NM25601ZPQK43", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689727791211, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464555217439424786", "text"=>"test"}, "webhookEventId"=>"01H5NSZWBGKW3NM25601ZPQK43", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689727791211, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 352e-49-251-232-205.ngrok.io
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 352e-49-251-232-205.ngrok.io
+Started POST "/" for 147.92.150.198 at 2023-07-19 12:25:49 +0900
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 26684ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 573150)
+
+
+Started POST "/" for 147.92.149.165 at 2023-07-19 12:26:19 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 450)
+
+
+Started POST "/" for 147.92.149.168 at 2023-07-19 12:26:43 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 12:27:01 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464571038488592614", "text"=>"test"}, "webhookEventId"=>"01H5P2ZND10VHMDN88X8V5Q1HD", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689737221348, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464571038488592614", "text"=>"test"}, "webhookEventId"=>"01H5P2ZND10VHMDN88X8V5Q1HD", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689737221348, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 642)
+
+
+  
+ArgumentError (`channel_token` is not configured):
+  
+app/controllers/line_bot_controller.rb:30:in `block in callback'
+app/controllers/line_bot_controller.rb:18:in `each'
+app/controllers/line_bot_controller.rb:18:in `callback'
+Started POST "/" for 147.92.149.169 at 2023-07-19 12:27:27 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started POST "/" for 147.92.150.197 at 2023-07-19 12:27:40 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 189)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 12:27:52 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464571124270497893", "text"=>"test"}, "webhookEventId"=>"01H5P317FHSJ6G506RXEFKAFC1", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689737272488, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464571124270497893", "text"=>"test"}, "webhookEventId"=>"01H5P317FHSJ6G506RXEFKAFC1", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689737272488, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 189)
+
+
+Started POST "/" for 147.92.150.193 at 2023-07-19 13:04:37 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 6ms (Allocations: 188)
+
+
+Started POST "/" for 147.92.150.194 at 2023-07-19 13:04:42 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (Allocations: 188)
+
+
+Started POST "/" for 147.92.149.166 at 2023-07-19 13:04:48 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 1ms (Allocations: 188)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 13:11:16 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 2ms (Allocations: 188)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 13:13:41 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464575735219093606", "text"=>"aaa"}, "webhookEventId"=>"01H5P5N3AJ3ABFS8EWDJ3X0FP2", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689740020895, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464575735219093606", "text"=>"aaa"}, "webhookEventId"=>"01H5P5N3AJ3ABFS8EWDJ3X0FP2", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689740020895, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 2ms (Allocations: 188)
+
+
+Started POST "/callback" for 147.92.149.166 at 2023-07-19 13:35:21 +0900
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 53ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1690)
+
+
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 13:36:22 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464578019957407851", "text"=>"test"}, "webhookEventId"=>"01H5P6YMYZMYNN73YBZNNVW9F1", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741382521, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464578019957407851", "text"=>"test"}, "webhookEventId"=>"01H5P6YMYZMYNN73YBZNNVW9F1", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741382521, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 353ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1659)
+
+
+Started POST "/callback" for 147.92.149.168 at 2023-07-19 13:43:31 +0900
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1690)
+
+
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 13:44:25 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464578829340901970", "text"=>"a"}, "webhookEventId"=>"01H5P7DCD9FYC6PMEYXF0PPQ58", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741864944, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464578829340901970", "text"=>"a"}, "webhookEventId"=>"01H5P7DCD9FYC6PMEYXF0PPQ58", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741864944, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 252ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 13:46:33 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579044743577793", "text"=>"aaa"}, "webhookEventId"=>"01H5P7H9VBFFM4KBHSVS4RWP1X", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741993327, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579044743577793", "text"=>"aaa"}, "webhookEventId"=>"01H5P7H9VBFFM4KBHSVS4RWP1X", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689741993327, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 196ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1101)
+
+
+Started POST "/" for 147.92.150.195 at 2023-07-19 13:48:28 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 473)
+
+
+Started POST "/" for 147.92.149.165 at 2023-07-19 13:49:26 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 249)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 13:49:40 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579357638131717", "text"=>"aaa"}, "webhookEventId"=>"01H5P7PZVWCZWYXANA4J2AC7VM", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742180024, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579357638131717", "text"=>"aaa"}, "webhookEventId"=>"01H5P7PZVWCZWYXANA4J2AC7VM", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742180024, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 259ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1194)
+
+
+Started POST "/" for 147.92.150.195 at 2023-07-19 13:53:31 +0900
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 33ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1688)
+
+
+Started POST "/" for 147.92.149.167 at 2023-07-19 13:53:51 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579779518791702", "text"=>"ggg"}, "webhookEventId"=>"01H5P7YNJ6WWKCGPRVP2TJFD69", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742431401, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464579779518791702", "text"=>"ggg"}, "webhookEventId"=>"01H5P7YNJ6WWKCGPRVP2TJFD69", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742431401, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 226ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1663)
+
+
+Started POST "/callback" for 147.92.149.169 at 2023-07-19 13:58:03 +0900
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1690)
+
+
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 13:59:31 +0900
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464580348920725972", "text"=>"あいうえお"}, "webhookEventId"=>"01H5P8915KKN0GCD8DTP83W3T6", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742770872, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464580348920725972", "text"=>"あいうえお"}, "webhookEventId"=>"01H5P8915KKN0GCD8DTP83W3T6", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742770872, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 240ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+Started GET "/" for ::1 at 2023-07-19 13:59:54 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (17.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 146.0ms | Allocations: 7749)
+  Rendered layout layouts/application.html.erb (Duration: 196.3ms | Allocations: 12897)
+Completed 200 OK in 227ms (Views: 116.0ms | ActiveRecord: 94.9ms | Allocations: 15715)
+
+
+Started GET "/tasks/2" for ::1 at 2023-07-19 13:59:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (8.8ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:62:in `set_task'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2299)
+Completed 200 OK in 60ms (Views: 11.6ms | ActiveRecord: 8.8ms | Allocations: 5454)
+
+
+Started GET "/tasks" for ::1 at 2023-07-19 13:59:58 +0900
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (10.7ms)[0m  [1m[34mSELECT `tasks`.* FROM `tasks`[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 3287)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 5132)
+Completed 200 OK in 62ms (Views: 45.9ms | ActiveRecord: 10.7ms | Allocations: 5601)
+
+
+Started POST "/callback" for 147.92.149.167 at 2023-07-19 14:01:15 +0900
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LineBotController#callback as HTML
+  Parameters: {"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464580524074599074", "text"=>"てすと"}, "webhookEventId"=>"01H5P8C6JPCKNXWMY19E4659H5", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742875084, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}], "line_bot"=>{"destination"=>"Uecfd2517514fcc4c20a9663aab304350", "events"=>[{"type"=>"message", "message"=>{"type"=>"text", "id"=>"464580524074599074", "text"=>"てすと"}, "webhookEventId"=>"01H5P8C6JPCKNXWMY19E4659H5", "deliveryContext"=>{"isRedelivery"=>false}, "timestamp"=>1689742875084, "source"=>{"type"=>"user", "userId"=>"U09b475b7236accc32a1d6f7d1e4ca9f3"}, "replyToken"=>"[FILTERED]", "mode"=>"active"}]}}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 227ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2999)
+
+
