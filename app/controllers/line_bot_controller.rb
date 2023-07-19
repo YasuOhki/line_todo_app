@@ -3,9 +3,8 @@ class LineBotController < ApplicationController
 
   def callback
     # LINEで送られてきたメッセージのデータを取得
-
     body = request.body.read
-    #binding.pry
+
     # LINE以外からリクエストが来た場合 Error を返す
     signature = request.env["HTTP_X_LINE_SIGNATURE"]
     unless client.validate_signature(body, signature)
@@ -14,19 +13,26 @@ class LineBotController < ApplicationController
 
     # LINEで送られてきたメッセージを適切な形式に変形
     events = client.parse_events_from(body)
-    #binding.pry
     events.each do |event|
       # LINE からテキストが送信された場合
       if (event.type === Line::Bot::Event::MessageType::Text)
         # LINE からテキストが送信されたときの処理を記述する
         message = event["message"]["text"]
-        #binding.pry
-        # 送信されたメッセージをデータベースに保存するコードを書こう
 
-        reply_message = {
-          type: "text",
-          text: "debug_reply" # LINE に返すメッセージを考えてみよう
-        }
+        # 送信されたメッセージをデータベースに保存するコードを書こう
+        task = Task.new(content: message)
+
+        if task.save
+          reply_message = {
+            type: "text",
+            text: "タスク「#{message}」を登録しました" # LINE に返すメッセージを考えてみよう
+          }
+        else
+          reply_message = {
+            type: "text",
+            text: "タスク「#{message}」の登録に失敗しました" # LINE に返すメッセージを考えてみよう
+          }
+        end
         client.reply_message(event["replyToken"], reply_message)
       end
     end
