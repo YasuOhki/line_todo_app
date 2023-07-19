@@ -75,6 +75,6 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # ngrok
-  config.hosts = ["e554-49-251-232-205.ngrok.io", "localhost"]
+  config.hosts = ["efba-49-251-232-205.ngrok.io", "localhost"]
   config.web_console.allowed_ips = '0.0.0.0/0'
 end
